@@ -2,7 +2,7 @@ function generateNumber(){
 
     const min = Math.ceil (document.querySelector(".number1").value)
     const max = Math.floor (document.querySelector(".number2").value)
-    const numeroSorteado = document.querySelector("h1")
+    let h1 = document.querySelector("h1")
 
 
     
@@ -14,7 +14,7 @@ function generateNumber(){
         const result =  Math.floor(Math.random() * (max - min + 1)) + min;
          
     
-       alert(result) 
+       h1.innerHTML = (result) 
     }
 
 
